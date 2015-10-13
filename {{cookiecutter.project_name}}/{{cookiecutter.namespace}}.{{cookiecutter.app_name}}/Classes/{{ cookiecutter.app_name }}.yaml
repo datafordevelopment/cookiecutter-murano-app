@@ -1,0 +1,24 @@
+Namespaces:
+  =: io.murano.apps
+  std: io.murano
+  sys: io.murano.system
+  db: io.murano.databases
+
+Name: {{ cookiecutter.app_name }}
+
+Extends: std:{{ cookiecutter.app_type }}
+
+Properties:
+  name:
+    Contract: $.string().notNull()
+
+Methods:
+  initialize:
+    Body:
+      - $._environment: $.find(std:Environment).require()
+
+  deploy:
+    Body:
+      - If: not $.getAttr(deployed, false)
+        Then:
+          - $.setAttr(deployed, true)

@@ -1,0 +1,19 @@
+FormatVersion: 2.0.0
+Version: {{ cookiecutter.app_version }}
+Name: Deploy {{ cookiecutter.app_name }}
+
+Parameters:
+  appName: $appName
+
+Body: |
+  return deploy(args.appName).stdout
+
+Scripts:
+  deploy:
+    Type: {{ cookiecutter.app_type }}
+    Version: {{ cookiecutter.app_version }}
+    EntryPoint: deploy{{ cookiecutter.app_name }}.sh
+    Files: []
+    Options:
+      captureStdout: true
+      captureStderr: true

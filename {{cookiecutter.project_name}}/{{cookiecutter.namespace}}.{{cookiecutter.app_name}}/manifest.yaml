@@ -1,0 +1,10 @@
+Format: {{ cookiecutter.app_format }}
+Type: {{ cookiecutter.app_type }}
+FullName: {{ cookiecutter.namespace }}.{{ cookiecutter.app_name }}
+Name: {{ cookiecutter.app_name }}
+Description: |
+ {{ cookiecutter.app_description }}
+Author: {{ cookiecutter.author_name }}
+Tags: [{{ cookiecutter.tags }}]
+Classes:
+ {{ cookiecutter.namespace }}.{{ cookiecutter.app_name }}: {{ cookiecutter.app_name }}.yaml

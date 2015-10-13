@@ -1,0 +1,13 @@
+{
+    "project_name": "murano-app",
+    "app_type": "Application",
+    "namespace": "io.murano.apps",
+    "app_name": "ExampleApp",
+    "tags": "CMS, PHP, Web",
+    "app_format": 1.0,
+    "version": "1.0.0",
+    "author_name": "Your Name",
+    "email": "Your email",
+    "description": "A short description of the project.",
+    "year": "2015"
+}
