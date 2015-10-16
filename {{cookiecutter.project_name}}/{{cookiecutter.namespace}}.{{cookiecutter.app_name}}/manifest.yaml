@@ -3,7 +3,7 @@ Type: {{ cookiecutter.app_type }}
 FullName: {{ cookiecutter.namespace }}.{{ cookiecutter.app_name }}
 Name: {{ cookiecutter.app_name }}
 Description: |
- {{ cookiecutter.app_description }}
+ {{ cookiecutter.description }}
 Author: {{ cookiecutter.author_name }}
 Tags: [{{ cookiecutter.tags }}]
 Classes:
